@@ -14,3 +14,26 @@
             <app-profile [isOpen]="isModalProfileOpen" (close)="closeModalProfile()"></app-profile>
     </div>
 </div>
+
+<div class="nav">
+    <div class="navCurso">
+        <app-nav-main-header nombreNav="Cursos">
+            <a [routerLink]="['/']">Diseño de Interfaces</a>
+            <a [routerLink]="['/']">Fundamentos de Desarrollo Web</a>
+            <a [routerLink]="['/']">Fundamentos de Desarrollo Móvil</a>
+        </app-nav-main-header>
+    </div>
+
+    <div class="nav-derecha">
+        <app-nav-main-header nombreNav="Alumnos">
+            <a [routerLink]="['/']">Centro de control de cursos</a>
+            <a [routerLink]="['/']">Alumnos Inscritos</a>
+        </app-nav-main-header>
+
+        <app-nav-main-header nombreNav="Información del Curso">
+            <a [routerLink]="['/']">Enlaces</a>
+            <a [routerLink]="['/']">Avisos</a>
+        </app-nav-main-header>
+    </div>
+</div>
+
