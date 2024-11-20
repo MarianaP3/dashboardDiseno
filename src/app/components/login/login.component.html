@@ -19,8 +19,9 @@
             <i class="fa-solid fa-lock"></i>
             <input class="input" type="text" onfocus="this.value=''" value="Contraseña institucional">
         </div>
-        <a href="">¿Olvidó su usuario o contraseña?</a>
-        <button class="btn">Iniciar sesión (ingresar)</button>
+        <a [routerLink]="['/respasw']">¿Olvidaste tu contraseña?</a>
+        <button class="btn" (click)="navigateToMainDash()">Iniciar sesión (ingresar)</button>
+
     </div>
 
     <!-- Footer -->

@@ -1,16 +1,19 @@
 .header {
     font-family: "Open Sans" !important; 
     display: flex;
-    height: 129px;
+    height: 137px;
     padding: 0px 144px;
     justify-content: space-between;
     align-items: center;
     flex-shrink: 0;
     background-color: #004A98;
     color: white;
-    border-bottom: 5px solid var(--Footer_color, #00B2E3);
+    border-bottom: 8px solid var(--Footer_color, #00B2E3);
     font-size: 42px;
     font-weight: 600;
+    position: fixed;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 
@@ -23,6 +26,7 @@
     flex-direction: column; /* Organización vertical: header, contenido, footer */
     min-height: 100vh;      /* Mínimo: altura completa de la pantalla */
     overflow-y: hidden;
+    overflow-x: hidden;
   }
 
   .container h4 {
@@ -45,6 +49,7 @@
     width: 800px;
     padding: 120px 696px 149px 144px;
     justify-content: left;
+    margin-top: 100px;
 }
 
 .btn{
@@ -56,4 +61,5 @@
     font-size: 15px;
     font-style: normal;
     font-weight: 600;
+    cursor: pointer;
 }
