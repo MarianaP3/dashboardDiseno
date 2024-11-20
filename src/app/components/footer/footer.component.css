@@ -1,3 +1,28 @@
+:root {
+    --Footer_color: #00B2E3; /* Color del borde superior */
+    --Primary_color: #004A98; /* Color de fondo */
+    --White_color: #FFFFFF; /* Blanco */
+}
+/*
+.container {
+    display: flex;
+    height: 174px;
+    padding: 0px 144px;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--White_color);
+    border-top: 8px solid var(--Footer_color);
+    background: var(--Primary_color);
+    
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: left;
+    box-sizing: border-box;
+}
+*/
+
 .container {
     display: flex;
     height: 174px;
