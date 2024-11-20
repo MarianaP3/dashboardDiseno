@@ -1,1 +1,38 @@
-<p>main-header works!</p>
+<div class="header">
+    <div class="images">
+        <img class="img" src="/images/logoUaslp.png" alt="">
+        <img class="img" src="/images/logo2.png" alt="">
+    </div>
+
+    <button class="newMat" (click)="openModal()" >Crear Material</button>
+
+    <div id="myModal" class="modal" *ngIf="isModalOpen" (click)="closeModal()">
+
+        <!-- Modal content -->
+        <div class="modal-content" (click)="$event.stopPropagation()">
+          <span class="close" (click)="closeModal()">&times;</span>
+          <h4>CURSO: {{courseTitle}}</h4>
+          <div class="inputs">
+            <div class="input-group">
+                <p>Nombre Material:</p>
+                <input type="text">
+              </div>
+              <div class="input-group">
+                <p>Descripción Material:</p>
+                <input class="description" type="text">
+              </div>
+          </div>
+          <div class="bottom-btn">
+            <button class="b-btn" style="background-color: #969696;">Subir Archivo</button>
+            <button class="b-btn" style="background-color: #004A98;">Crear Material</button>
+          </div>
+        </div>
+      
+      </div>
+      
+
+    <div class="menus">
+        <button class="btn-top"><i class="fa-solid fa-bell fa-2x" style="color: #ffff;"></i></button>
+        <button class="btn-top"><i class="fa-solid fa-user fa-2xl" style="color: #ffff;"></i></button>
+    </div>
+</div>
