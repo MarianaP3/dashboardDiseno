@@ -1,3 +1,9 @@
+.all{
+    position: sticky;
+    width: 100%;
+    top: 0;
+}
+
 .header {
     font-family: "Open Sans" !important; 
     display: flex;
@@ -46,10 +52,11 @@
 }
 
 .nav{
+    background-color: #fff;
     display: flex;
     justify-content: center;
     gap: 900px;
-    margin-top: 5px;
+    padding-top: 5px;
 }
 
 .nav-derecha{
