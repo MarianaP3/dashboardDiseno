@@ -49,6 +49,7 @@
     background: none;
     border: none;
     cursor: pointer;
+    color: #fff;
 }
 
 .nav{
@@ -78,5 +79,13 @@
   .nav a:hover {
     background-color: #0D6EFD;
     color: white;
+  }
+
+  .newMat:hover{
+    background-color: #b3b3b3   ;
+  }
+
+  .btn-top:hover{
+    color: #00014a;
   }
   
