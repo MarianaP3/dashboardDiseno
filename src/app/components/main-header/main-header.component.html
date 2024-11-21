@@ -1,39 +1,42 @@
-<div class="header">
-    <div class="images">
-        <img class="img" src="/images/logoUaslp.png" alt="">
-        <img class="img" src="/images/logo2.png" alt="">
+<div class="all">
+    <div class="header">
+        <div class="images">
+            <img class="img" src="/images/logoUaslp.png" alt="">
+            <img class="img" src="/images/logo2.png" alt="">
+        </div>
+    
+        <button class="newMat" (click)="openModalCreate()" >Crear Material</button>
+            <app-create-content [isOpen]="isModalOpen" (close)="closeModalCreate()"></app-create-content>
+          
+        <div class="menus">
+            <button class="btn-top" (click)="openModalNoti()"><i class="fa-solid fa-bell fa-2x" style="color: #ffff;"></i></button>
+                <app-notifications [isOpen]="isModalNotiOpen" (close)="closeModalNoti()"></app-notifications>
+            <button class="btn-top" (click)="openModalProfile()"><i class="fa-solid fa-user fa-2xl" style="color: #ffff;"></i></button>
+                <app-profile [isOpen]="isModalProfileOpen" (close)="closeModalProfile()"></app-profile>
+        </div>
     </div>
-
-    <button class="newMat" (click)="openModalCreate()" >Crear Material</button>
-        <app-create-content [isOpen]="isModalOpen" (close)="closeModalCreate()"></app-create-content>
-      
-    <div class="menus">
-        <button class="btn-top" (click)="openModalNoti()"><i class="fa-solid fa-bell fa-2x" style="color: #ffff;"></i></button>
-            <app-notifications [isOpen]="isModalNotiOpen" (close)="closeModalNoti()"></app-notifications>
-        <button class="btn-top" (click)="openModalProfile()"><i class="fa-solid fa-user fa-2xl" style="color: #ffff;"></i></button>
-            <app-profile [isOpen]="isModalProfileOpen" (close)="closeModalProfile()"></app-profile>
+    
+    <div class="nav">
+        <div class="navCurso">
+            <app-nav-main-header nombreNav="Cursos">
+                <a [routerLink]="['/']">Diseño de Interfaces</a>
+                <a [routerLink]="['/']">Fundamentos de Desarrollo Web</a>
+                <a [routerLink]="['/']">Fundamentos de Desarrollo Móvil</a>
+            </app-nav-main-header>
+        </div>
+    
+        <div class="nav-derecha">
+            <app-nav-main-header nombreNav="Alumnos">
+                <a [routerLink]="['/']">Centro de control de cursos</a>
+                <a [routerLink]="['/listaalumnos']">Alumnos Inscritos</a>
+            </app-nav-main-header>
+    
+            <app-nav-main-header nombreNav="Información del Curso">
+                <a [routerLink]="['/']">Enlaces</a>
+                <a [routerLink]="['/avisos']">Avisos</a>
+            </app-nav-main-header>
+        </div>
     </div>
+    
+    
 </div>
-
-<div class="nav">
-    <div class="navCurso">
-        <app-nav-main-header nombreNav="Cursos">
-            <a [routerLink]="['/']">Diseño de Interfaces</a>
-            <a [routerLink]="['/']">Fundamentos de Desarrollo Web</a>
-            <a [routerLink]="['/']">Fundamentos de Desarrollo Móvil</a>
-        </app-nav-main-header>
-    </div>
-
-    <div class="nav-derecha">
-        <app-nav-main-header nombreNav="Alumnos">
-            <a [routerLink]="['/']">Centro de control de cursos</a>
-            <a [routerLink]="['/']">Alumnos Inscritos</a>
-        </app-nav-main-header>
-
-        <app-nav-main-header nombreNav="Información del Curso">
-            <a [routerLink]="['/']">Enlaces</a>
-            <a [routerLink]="['/']">Avisos</a>
-        </app-nav-main-header>
-    </div>
-</div>
-

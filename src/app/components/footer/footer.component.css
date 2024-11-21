@@ -33,7 +33,7 @@
     border-top: 8px solid var(--Footer_color, #00B2E3);
     background: var(--Primary_color, #004A98);
     
-    position: sticky;
+    position: static;
     bottom: 0;
     left: 0;
     width: 100%;
