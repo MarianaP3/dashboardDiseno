@@ -1,0 +1,15 @@
+.gradesHeader{
+    color: black;
+    background-color: #D9D9D9;
+    font-family: "Open Sans" !important; 
+
+}
+.gradesHeader-menu{
+    background-color: #D9D9D9;
+    height: 100px;
+}
+.gradesHeader-menuItem{
+    display: inline-block;
+    padding-inline: 150px;
+    padding-top: 10px;
+}
