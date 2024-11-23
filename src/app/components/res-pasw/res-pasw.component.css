@@ -1,65 +1,64 @@
 .header {
-    font-family: "Open Sans" !important; 
-    display: flex;
-    height: 137px;
-    padding: 0px 144px;
-    justify-content: space-between;
-    align-items: center;
-    flex-shrink: 0;
-    background-color: #004A98;
-    color: white;
-    border-bottom: 8px solid var(--Footer_color, #00B2E3);
-    font-size: 42px;
-    font-weight: 600;
-    position: fixed;
-    box-sizing: border-box;
-    width: 100%;
+  font-family: "Open Sans" !important;
+  display: flex;
+  height: 137px;
+  padding: 0px 144px;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  background-color: #004a98;
+  color: white;
+  border-bottom: 8px solid var(--Footer_color, #00b2e3);
+  font-size: 42px;
+  font-weight: 600;
+  position: fixed;
+  box-sizing: border-box;
+  width: 100%;
 }
 
-
-.img{
-    height: 101px;
+.img {
+  height: 101px;
 }
 
 .container {
-    display: flex;
-    flex-direction: column; /* Organización vertical: header, contenido, footer */
-    min-height: 100vh;      /* Mínimo: altura completa de la pantalla */
-    overflow-y: hidden;
-    overflow-x: hidden;
-  }
+  display: flex;
+  flex-direction: column; /* Organización vertical: header, contenido, footer */
+  min-height: 100vh; /* Mínimo: altura completa de la pantalla */
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
 
-  .container h4 {
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 600;
-    margin: 0;
+.container h4 {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  margin: 0;
 }
 
 .container p {
-    font-size: 18px;
-    font-style: normal;
-    margin: 0;
-    color: #505050;
+  font-size: 18px;
+  font-style: normal;
+  margin: 0;
+  color: #505050;
 }
-.content{
-    font-family: "Open Sans"; 
-    display: flex;
-    flex-direction: column;
-    width: 800px;
-    padding: 120px 696px 149px 144px;
-    justify-content: left;
-    margin-top: 100px;
+.content {
+  font-family: "Open Sans";
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  padding: 120px 696px 149px 144px;
+  justify-content: left;
+  margin-top: 100px;
 }
 
-.btn{
-    width: 280px;
-    height: 47px;
-    border: 2px solid #35393D;
-    background: #6C7175;
-    color: #35393D;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 600;
-    cursor: pointer;
+.btn {
+  width: 280px;
+  height: 47px;
+  border: 2px solid #35393d;
+  background: #6c7175;
+  color: #35393d;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  cursor: pointer;
 }

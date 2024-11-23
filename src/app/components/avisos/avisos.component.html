@@ -1,47 +1,46 @@
 <app-main-header></app-main-header>
 
 <div class="top">
-    <a [routerLink]="['/mainDash']"><i class="fa-solid fa-circle-arrow-left fa-3x"></i></a>
+  <a [routerLink]="['/mainDash']"
+    ><i class="fa-solid fa-circle-arrow-left fa-3x"></i
+  ></a>
 </div>
 <div class="container">
-    
-    
-    <div class="sidebar">
-        <div class="profile">
-            <div class="profiles">
-                <div class="profile-icon">DI</div>
-                <div class="profile-icon">FW</div>
-                <div class="profile-icon">FM</div>
-            </div>
+  <div class="sidebar">
+    <div class="profile">
+      <div class="profiles">
+        <div class="profile-icon">DI</div>
+        <div class="profile-icon">FW</div>
+        <div class="profile-icon">FM</div>
+      </div>
 
-            <div class="connection">
-                <span>Conexión</span>
-                <img src="/images/teams-logo.png" alt="Teams Logo" />
-            </div>
-        </div>
-
-        <div class="mid">
-            <div class="groups">
-                <h3>Grupos</h3>
-                <p># Clase A</p>
-                <p># Clase B</p>
-                <p># Clase C</p>
-            </div>
-
-            <div class="direct-messages">
-                <h3>Mensajes directos</h3>
-                <p><span class="status-circle"></span> Jorge Rojas</p>
-                <p><span class="status-circle"></span> Miguel Cortez</p>
-                <p><span class="status-circle"></span> Colby López</p>
-            </div>
-        </div>
+      <div class="connection">
+        <span>Conexión</span>
+        <img src="/images/teams-logo.png" alt="Teams Logo" />
+      </div>
     </div>
 
-    <div class="message-area">
-        <textarea placeholder="Enviar mensaje a #Clase-A"></textarea>
-        <button class="attach-btn"><i class="fa-solid fa-paperclip"></i></button>
+    <div class="mid">
+      <div class="groups">
+        <h3>Grupos</h3>
+        <p># Clase A</p>
+        <p># Clase B</p>
+        <p># Clase C</p>
+      </div>
+
+      <div class="direct-messages">
+        <h3>Mensajes directos</h3>
+        <p><span class="status-circle"></span> Jorge Rojas</p>
+        <p><span class="status-circle"></span> Miguel Cortez</p>
+        <p><span class="status-circle"></span> Colby López</p>
+      </div>
     </div>
+  </div>
+
+  <div class="message-area">
+    <textarea placeholder="Enviar mensaje a #Clase-A"></textarea>
+    <button class="attach-btn"><i class="fa-solid fa-paperclip"></i></button>
+  </div>
 </div>
-
 
 <app-footer></app-footer>

@@ -6,7 +6,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   standalone: true,
   imports: [NgIf],
   templateUrl: './notifications.component.html',
-  styleUrl: './notifications.component.css'
+  styleUrl: './notifications.component.css',
 })
 export class NotificationsComponent {
   @Input() isOpen = false; // Recibe el estado del modal desde el padre

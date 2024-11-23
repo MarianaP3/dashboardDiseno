@@ -7,10 +7,12 @@
   </div>
   <div class="gradesHeader-editor">
     <div class="gradesHeader-editorItem" style="width: 90px">
-      <i
-        class="fa-sharp fa-solid fa-arrow-left fa-4x"
-        style="padding-left: 15px"
-      ></i>
+      <a [routerLink]="['/mainDash']">
+        <i
+          class="fa-sharp fa-solid fa-arrow-left fa-4x"
+          style="padding-left: 15px; color: black"
+        ></i>
+      </a>
     </div>
     <div
       class="gradesHeader-editorItem"
@@ -68,5 +70,85 @@
       <b>S</b>
     </div>
   </div>
-  <div style="background-color: #00b2e3; height: 12px;"></div>
+  <div style="background-color: #00b2e3; height: 12px"></div>
+</div>
+<div class="title">CALIFICACIONES</div>
+
+<table class="grades-table">
+  <thead>
+    <tr>
+      <th>APELLIDOS</th>
+      <th>NOMBRE</th>
+      <th>CLAVE ÚNICA</th>
+      <th>P1</th>
+      <th>P2</th>
+      <th>P3</th>
+      <th>P4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chavez Baldera</td>
+      <td>Jair</td>
+      <td>345098</td>
+      <td><input type="checkbox" /></td>
+      <td><input type="checkbox" /></td>
+      <td><input type="checkbox" /></td>
+      <td><input type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td>Cortez Gutiérrez</td>
+      <td>Miguel Alejandro</td>
+      <td>330892</td>
+      <td><input type="checkbox" /></td>
+      <td><input type="checkbox" /></td>
+      <td><input type="checkbox" /></td>
+      <td><input type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td>De la Serna Rodríguez</td>
+      <td>Miguel Ángel</td>
+      <td>306541</td>
+      <td><input type="checkbox" /></td>
+      <td><input type="checkbox" /></td>
+      <td><input type="checkbox" /></td>
+      <td><input type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td>López Facundo</td>
+      <td>Diego</td>
+      <td>321942</td>
+      <td><input type="checkbox" /></td>
+      <td><input type="checkbox" /></td>
+      <td><input type="checkbox" /></td>
+      <td><input type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td>González Martínez</td>
+      <td>Carlos Osiel</td>
+      <td>290475</td>
+      <td><input type="checkbox" /></td>
+      <td><input type="checkbox" /></td>
+      <td><input type="checkbox" /></td>
+      <td><input type="checkbox" /></td>
+    </tr>
+    <tr>
+      <td>Rojas Martínez</td>
+      <td>Jorge Ángel</td>
+      <td>309651</td>
+      <td><input type="checkbox" /></td>
+      <td><input type="checkbox" /></td>
+      <td><input type="checkbox" /></td>
+      <td><input type="checkbox" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="gradesFooter">
+  <div class="gradesHeader-menu">
+    <div class="gradesFooter-menuItem">CALIFICACIONES</div>
+    <div class="gradesFooter-menuItem">TAREAS</div>
+    <div class="gradesFooter-menuItem">PARTICIPACIONES</div>
+    <div class="gradesFooter-menuItem">ASISTENCIA</div>
+  </div>
 </div>

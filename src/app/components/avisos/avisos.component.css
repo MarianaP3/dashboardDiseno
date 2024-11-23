@@ -1,127 +1,122 @@
+.container {
+  display: flex;
+  height: 650px;
+  margin: 10px 100px 50px 100px;
+  font-family: "Open Sans";
+}
 
-  .container {
-    display: flex;
-    height: 650px;
-    margin: 10px 100px 50px 100px;
-    font-family: "Open Sans";
-  }
+.top {
+  margin-left: 30px;
+}
 
-  .top{
-    margin-left: 30px;
-  }
-  
-  .top i{
-    color: #0D6EFD;
-  }
-  
-  .top i:hover{
-    filter: saturate(.5)
-  }
+.top i {
+  color: #0d6efd;
+}
 
-  .sidebar {
-    width: 300px;
-    background-color: #004a98;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    box-sizing: border-box;
-    gap: 10px;
-  }
-  
-  .profile {
-    display: flex;
-    flex-direction: column;
-    gap: 270px;
-    border-right: 2px solid white;
-  }
+.top i:hover {
+  filter: saturate(0.5);
+}
 
+.sidebar {
+  width: 300px;
+  background-color: #004a98;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  gap: 10px;
+}
 
-  .profiles{
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    padding: 20px;
-    
-  }
-  
-  .profile-icon {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #3b3b3b;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
-  .groups,
-  .direct-messages {
-    margin-top: 20px;
-  }
-  
-  h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  p {
-    margin: 5px 0;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  p:hover {
-    text-decoration: underline;
-  }
-  
-  .status-circle {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background-color: white;
-    border-radius: 50%;
-    margin-right: 10px;
-  }
-  
-  .connection {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  .connection img {
-    width: 30px;
-    height: 30px;
-  }
-  
-  .message-area {
-    flex-grow: 1;
-    background-color: #f3f3f3;
-    display: flex;
-    align-items: flex-end;
-    padding: 20px;
-    box-sizing: border-box;
-    
-  }
-  
-  textarea {
-    width: calc(100% - 50px);
-    height: 80px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    resize: none;
-    font-size: 16px;
-  }
-  
-  .attach-btn {
-    background: none;
-    border: none;
-    font-size: 24px;
-    margin-left: 10px;
-    cursor: pointer;
-  }
-  
+.profile {
+  display: flex;
+  flex-direction: column;
+  gap: 270px;
+  border-right: 2px solid white;
+}
+
+.profiles {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 20px;
+}
+
+.profile-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #3b3b3b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.groups,
+.direct-messages {
+  margin-top: 20px;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 5px 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+p:hover {
+  text-decoration: underline;
+}
+
+.status-circle {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.connection {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.connection img {
+  width: 30px;
+  height: 30px;
+}
+
+.message-area {
+  flex-grow: 1;
+  background-color: #f3f3f3;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+textarea {
+  width: calc(100% - 50px);
+  height: 80px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  resize: none;
+  font-size: 16px;
+}
+
+.attach-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  margin-left: 10px;
+  cursor: pointer;
+}

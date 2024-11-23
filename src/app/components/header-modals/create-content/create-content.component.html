@@ -1,21 +1,22 @@
 <div class="modal" *ngIf="isOpen" (click)="onClose()">
-    <div class="modal-content" (click)="$event.stopPropagation()">
-        <span class="close" (click)="onClose()">&times;</span>
-        
-            <h4>CURSO: {{courseTitle}}</h4>
-            <div class="inputs">
-                <div class="input-group">
-                    <p>Nombre Material:</p>
-                    <input type="text">
-                </div>
-                <div class="input-group">
-                    <p>Descripción Material:</p>
-                    <input class="description" type="text">
-                </div>
-            </div>
-        
-        <div class="bottom-btn">
-            <button class="b-btn b1">Subir Archivo</button>
-            <button class="b-btn b2">Crear Material</button>
-          </div>
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <span class="close" (click)="onClose()">&times;</span>
+
+    <h4>CURSO: {{ courseTitle }}</h4>
+    <div class="inputs">
+      <div class="input-group">
+        <p>Nombre Material:</p>
+        <input type="text" />
+      </div>
+      <div class="input-group">
+        <p>Descripción Material:</p>
+        <input class="description" type="text" />
+      </div>
     </div>
+
+    <div class="bottom-btn">
+      <button class="b-btn b1">Subir Archivo</button>
+      <button class="b-btn b2">Crear Material</button>
+    </div>
+  </div>
+</div>

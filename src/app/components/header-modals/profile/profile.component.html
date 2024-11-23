@@ -1,17 +1,19 @@
 <div class="modal" *ngIf="isOpen" (click)="onClose()">
-    <div class="modal-content" (click)="$event.stopPropagation()">
-        <div class="img-profile">
-            <img src="/images/profile.png" alt="">
-        </div>
-        <div class="labels">
-            <label>Nombre de Usuario</label>
-            <label>Correo de UASLPNombre de Usuario</label>
-            <label>Número de teléfono</label>
-            <label>Descripción de usuario</label>
-        </div>
-        <div class="exit">
-            <a [routerLink]="['/login']"><button><img class="img-exit" src="/images/back-profile.png" alt=""></button></a>
-        </div>
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <div class="img-profile">
+      <img src="/images/profile.png" alt="" />
     </div>
+    <div class="labels">
+      <label>Nombre de Usuario</label>
+      <label>Correo de UASLPNombre de Usuario</label>
+      <label>Número de teléfono</label>
+      <label>Descripción de usuario</label>
+    </div>
+    <div class="exit">
+      <a [routerLink]="['/login']"
+        ><button>
+          <img class="img-exit" src="/images/back-profile.png" alt="" /></button
+      ></a>
+    </div>
+  </div>
 </div>
-  

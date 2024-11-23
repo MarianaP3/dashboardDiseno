@@ -1,6 +1,6 @@
 <div class="dropdown" (click)="toggleDropdown()" (mouseleave)="closeDropdown()">
-    <button class="dropbtn">{{nombreNav}}</button>
-    <div class="dropdown-content" *ngIf="isDropdownOpen">
-        <ng-content></ng-content> 
-    </div>
+  <button class="dropbtn">{{ nombreNav }}</button>
+  <div class="dropdown-content" *ngIf="isDropdownOpen">
+    <ng-content></ng-content>
+  </div>
 </div>

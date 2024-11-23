@@ -1,139 +1,238 @@
 <app-main-header></app-main-header>
 
 <div class="container">
-    <div class="topBar">
-        <a [routerLink]="['/mainDash']"><i class="fa-solid fa-circle-arrow-left fa-3x"></i></a>
-        <h1>LISTA DE ALUMNOS</h1>
-        <i class="fa-solid fa-magnifying-glass fa-3x"></i>
-    </div>
-    <div class="table">
-        <table class="custom-table">
-            <thead>
-              <tr>
-                <th>Apellidos</th>
-                <th>Nombre</th>
-                <th>Clave Única</th>
-                <th>Foto</th>
-                <th>Eliminar</th>
-                <th>Gráfica</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Pérez Salinas</td>
-                <td>Mariana Sarahí</td>
-                <td>389632</td>
-                <td><i class="fa-solid fa-user fa-2xl"></i></td>
-                <td><button class="btn-top" (click)="openModalDelete()"><i class="fa-solid fa-trash fa-2xl"></i></button></td>
-                <td><button [routerLink]="['/listaalumnos']"><i class="fa-solid fa-chart-column fa-2xl"></i></button></td>
-              </tr>
-              
-              <tr>
-                <td>Pérez Salinas</td>
-                <td>Mariana Sarahí</td>
-                <td>389632</td>
-                <td><i class="fa-solid fa-user fa-2xl"></i></td>
-                <td><button class="btn-top" (click)="openModalDelete()"><i class="fa-solid fa-trash fa-2xl"></i></button></td>
-                <td><button [routerLink]="['/listaalumnos']"><i class="fa-solid fa-chart-column fa-2xl"></i></button></td>
-              </tr>
-              
-              <tr>
-                <td>Pérez Salinas</td>
-                <td>Mariana Sarahí</td>
-                <td>389632</td>
-                <td><i class="fa-solid fa-user fa-2xl"></i></td>
-                <td><button class="btn-top" (click)="openModalDelete()"><i class="fa-solid fa-trash fa-2xl"></i></button></td>
-                <td><button [routerLink]="['/listaalumnos']"><i class="fa-solid fa-chart-column fa-2xl"></i></button></td>
-              </tr>
+  <div class="topBar">
+    <a [routerLink]="['/mainDash']"
+      ><i class="fa-solid fa-circle-arrow-left fa-3x"></i
+    ></a>
+    <h1>LISTA DE ALUMNOS</h1>
+    <i class="fa-solid fa-magnifying-glass fa-3x"></i>
+  </div>
+  <div class="table">
+    <table class="custom-table">
+      <thead>
+        <tr>
+          <th>Apellidos</th>
+          <th>Nombre</th>
+          <th>Clave Única</th>
+          <th>Foto</th>
+          <th>Eliminar</th>
+          <th>Gráfica</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Pérez Salinas</td>
+          <td>Mariana Sarahí</td>
+          <td>389632</td>
+          <td><i class="fa-solid fa-user fa-2xl"></i></td>
+          <td>
+            <button class="btn-top" (click)="openModalDelete()">
+              <i class="fa-solid fa-trash fa-2xl"></i>
+            </button>
+          </td>
+          <td>
+            <button [routerLink]="['/listaalumnos']">
+              <i class="fa-solid fa-chart-column fa-2xl"></i>
+            </button>
+          </td>
+        </tr>
 
-              <tr>
-                <td>Pérez Salinas</td>
-                <td>Mariana Sarahí</td>
-                <td>389632</td>
-                <td><i class="fa-solid fa-user fa-2xl"></i></td>
-                <td><button class="btn-top" (click)="openModalDelete()"><i class="fa-solid fa-trash fa-2xl"></i></button></td>
-                <td><button [routerLink]="['/listaalumnos']"><i class="fa-solid fa-chart-column fa-2xl"></i></button></td>
-              </tr>
+        <tr>
+          <td>Pérez Salinas</td>
+          <td>Mariana Sarahí</td>
+          <td>389632</td>
+          <td><i class="fa-solid fa-user fa-2xl"></i></td>
+          <td>
+            <button class="btn-top" (click)="openModalDelete()">
+              <i class="fa-solid fa-trash fa-2xl"></i>
+            </button>
+          </td>
+          <td>
+            <button [routerLink]="['/listaalumnos']">
+              <i class="fa-solid fa-chart-column fa-2xl"></i>
+            </button>
+          </td>
+        </tr>
 
-              <tr>
-                <td>Pérez Salinas</td>
-                <td>Mariana Sarahí</td>
-                <td>389632</td>
-                <td><i class="fa-solid fa-user fa-2xl"></i></td>
-                <td><button class="btn-top" (click)="openModalDelete()"><i class="fa-solid fa-trash fa-2xl"></i></button></td>
-                <td><button [routerLink]="['/listaalumnos']"><i class="fa-solid fa-chart-column fa-2xl"></i></button></td>
-              </tr>
+        <tr>
+          <td>Pérez Salinas</td>
+          <td>Mariana Sarahí</td>
+          <td>389632</td>
+          <td><i class="fa-solid fa-user fa-2xl"></i></td>
+          <td>
+            <button class="btn-top" (click)="openModalDelete()">
+              <i class="fa-solid fa-trash fa-2xl"></i>
+            </button>
+          </td>
+          <td>
+            <button [routerLink]="['/listaalumnos']">
+              <i class="fa-solid fa-chart-column fa-2xl"></i>
+            </button>
+          </td>
+        </tr>
 
-              <tr>
-                <td>Pérez Salinas</td>
-                <td>Mariana Sarahí</td>
-                <td>389632</td>
-                <td><i class="fa-solid fa-user fa-2xl"></i></td>
-                <td><button class="btn-top" (click)="openModalDelete()"><i class="fa-solid fa-trash fa-2xl"></i></button></td>
-                <td><button [routerLink]="['/listaalumnos']"><i class="fa-solid fa-chart-column fa-2xl"></i></button></td>
-              </tr>
+        <tr>
+          <td>Pérez Salinas</td>
+          <td>Mariana Sarahí</td>
+          <td>389632</td>
+          <td><i class="fa-solid fa-user fa-2xl"></i></td>
+          <td>
+            <button class="btn-top" (click)="openModalDelete()">
+              <i class="fa-solid fa-trash fa-2xl"></i>
+            </button>
+          </td>
+          <td>
+            <button [routerLink]="['/listaalumnos']">
+              <i class="fa-solid fa-chart-column fa-2xl"></i>
+            </button>
+          </td>
+        </tr>
 
-              <tr>
-                <td>Pérez Salinas</td>
-                <td>Mariana Sarahí</td>
-                <td>389632</td>
-                <td><i class="fa-solid fa-user fa-2xl"></i></td>
-                <td><button class="btn-top" (click)="openModalDelete()"><i class="fa-solid fa-trash fa-2xl"></i></button></td>
-                <td><button [routerLink]="['/listaalumnos']"><i class="fa-solid fa-chart-column fa-2xl"></i></button></td>
-              </tr>
+        <tr>
+          <td>Pérez Salinas</td>
+          <td>Mariana Sarahí</td>
+          <td>389632</td>
+          <td><i class="fa-solid fa-user fa-2xl"></i></td>
+          <td>
+            <button class="btn-top" (click)="openModalDelete()">
+              <i class="fa-solid fa-trash fa-2xl"></i>
+            </button>
+          </td>
+          <td>
+            <button [routerLink]="['/listaalumnos']">
+              <i class="fa-solid fa-chart-column fa-2xl"></i>
+            </button>
+          </td>
+        </tr>
 
-              <tr>
-                <td>Pérez Salinas</td>
-                <td>Mariana Sarahí</td>
-                <td>389632</td>
-                <td><i class="fa-solid fa-user fa-2xl"></i></td>
-                <td><button class="btn-top" (click)="openModalDelete()"><i class="fa-solid fa-trash fa-2xl"></i></button></td>
-                <td><button [routerLink]="['/listaalumnos']"><i class="fa-solid fa-chart-column fa-2xl"></i></button></td>
-              </tr>
+        <tr>
+          <td>Pérez Salinas</td>
+          <td>Mariana Sarahí</td>
+          <td>389632</td>
+          <td><i class="fa-solid fa-user fa-2xl"></i></td>
+          <td>
+            <button class="btn-top" (click)="openModalDelete()">
+              <i class="fa-solid fa-trash fa-2xl"></i>
+            </button>
+          </td>
+          <td>
+            <button [routerLink]="['/listaalumnos']">
+              <i class="fa-solid fa-chart-column fa-2xl"></i>
+            </button>
+          </td>
+        </tr>
 
-              <tr>
-                <td>Pérez Salinas</td>
-                <td>Mariana Sarahí</td>
-                <td>389632</td>
-                <td><i class="fa-solid fa-user fa-2xl"></i></td>
-                <td><button class="btn-top" (click)="openModalDelete()"><i class="fa-solid fa-trash fa-2xl"></i></button></td>
-                <td><button [routerLink]="['/listaalumnos']"><i class="fa-solid fa-chart-column fa-2xl"></i></button></td>
-              </tr>
+        <tr>
+          <td>Pérez Salinas</td>
+          <td>Mariana Sarahí</td>
+          <td>389632</td>
+          <td><i class="fa-solid fa-user fa-2xl"></i></td>
+          <td>
+            <button class="btn-top" (click)="openModalDelete()">
+              <i class="fa-solid fa-trash fa-2xl"></i>
+            </button>
+          </td>
+          <td>
+            <button [routerLink]="['/listaalumnos']">
+              <i class="fa-solid fa-chart-column fa-2xl"></i>
+            </button>
+          </td>
+        </tr>
 
-              <tr>
-                <td>Pérez Salinas</td>
-                <td>Mariana Sarahí</td>
-                <td>389632</td>
-                <td><i class="fa-solid fa-user fa-2xl"></i></td>
-                <td><button class="btn-top" (click)="openModalDelete()"><i class="fa-solid fa-trash fa-2xl"></i></button></td>
-                <td><button [routerLink]="['/listaalumnos']"><i class="fa-solid fa-chart-column fa-2xl"></i></button></td>
-              </tr>
+        <tr>
+          <td>Pérez Salinas</td>
+          <td>Mariana Sarahí</td>
+          <td>389632</td>
+          <td><i class="fa-solid fa-user fa-2xl"></i></td>
+          <td>
+            <button class="btn-top" (click)="openModalDelete()">
+              <i class="fa-solid fa-trash fa-2xl"></i>
+            </button>
+          </td>
+          <td>
+            <button [routerLink]="['/listaalumnos']">
+              <i class="fa-solid fa-chart-column fa-2xl"></i>
+            </button>
+          </td>
+        </tr>
 
-              <tr>
-                <td>Pérez Salinas</td>
-                <td>Mariana Sarahí</td>
-                <td>389632</td>
-                <td><i class="fa-solid fa-user fa-2xl"></i></td>
-                <td><button class="btn-top" (click)="openModalDelete()"><i class="fa-solid fa-trash fa-2xl"></i></button></td>
-                <td><button [routerLink]="['/listaalumnos']"><i class="fa-solid fa-chart-column fa-2xl"></i></button></td>
-              </tr>
+        <tr>
+          <td>Pérez Salinas</td>
+          <td>Mariana Sarahí</td>
+          <td>389632</td>
+          <td><i class="fa-solid fa-user fa-2xl"></i></td>
+          <td>
+            <button class="btn-top" (click)="openModalDelete()">
+              <i class="fa-solid fa-trash fa-2xl"></i>
+            </button>
+          </td>
+          <td>
+            <button [routerLink]="['/listaalumnos']">
+              <i class="fa-solid fa-chart-column fa-2xl"></i>
+            </button>
+          </td>
+        </tr>
 
-              <tr>
-                <td>Pérez Salinas</td>
-                <td>Mariana Sarahí</td>
-                <td>389632</td>
-                <td><i class="fa-solid fa-user fa-2xl"></i></td>
-                <td><button class="btn-top" (click)="openModalDelete()"><i class="fa-solid fa-trash fa-2xl"></i></button></td>
-                <td><button [routerLink]="['/listaalumnos']"><i class="fa-solid fa-chart-column fa-2xl"></i></button></td>
-              </tr>
+        <tr>
+          <td>Pérez Salinas</td>
+          <td>Mariana Sarahí</td>
+          <td>389632</td>
+          <td><i class="fa-solid fa-user fa-2xl"></i></td>
+          <td>
+            <button class="btn-top" (click)="openModalDelete()">
+              <i class="fa-solid fa-trash fa-2xl"></i>
+            </button>
+          </td>
+          <td>
+            <button [routerLink]="['/listaalumnos']">
+              <i class="fa-solid fa-chart-column fa-2xl"></i>
+            </button>
+          </td>
+        </tr>
 
-            
-              <!-- -------- -->
-               
-            </tbody>
-          </table>
-          <app-modal-delete [isOpen]="isModalDeleteOpen" (close)="closeModalDelete()"></app-modal-delete>
-    </div>
+        <tr>
+          <td>Pérez Salinas</td>
+          <td>Mariana Sarahí</td>
+          <td>389632</td>
+          <td><i class="fa-solid fa-user fa-2xl"></i></td>
+          <td>
+            <button class="btn-top" (click)="openModalDelete()">
+              <i class="fa-solid fa-trash fa-2xl"></i>
+            </button>
+          </td>
+          <td>
+            <button [routerLink]="['/listaalumnos']">
+              <i class="fa-solid fa-chart-column fa-2xl"></i>
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Pérez Salinas</td>
+          <td>Mariana Sarahí</td>
+          <td>389632</td>
+          <td><i class="fa-solid fa-user fa-2xl"></i></td>
+          <td>
+            <button class="btn-top" (click)="openModalDelete()">
+              <i class="fa-solid fa-trash fa-2xl"></i>
+            </button>
+          </td>
+          <td>
+            <button [routerLink]="['/listaalumnos']">
+              <i class="fa-solid fa-chart-column fa-2xl"></i>
+            </button>
+          </td>
+        </tr>
+
+        <!-- -------- -->
+      </tbody>
+    </table>
+    <app-modal-delete
+      [isOpen]="isModalDeleteOpen"
+      (close)="closeModalDelete()"
+    ></app-modal-delete>
+  </div>
 </div>
 
 <app-footer></app-footer>

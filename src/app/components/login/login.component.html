@@ -1,29 +1,40 @@
 <div class="container">
-    <!-- Header -->
-    <div class="header">
-        <div class="images">
-            <img class="img" src="/images/logoUaslp.png" alt="">
-            <img class="img" src="/images/logo2.png" alt="">
-        </div>
-        <p>Ingresar al sitio</p>
+  <!-- Header -->
+  <div class="header">
+    <div class="images">
+      <img class="img" src="/images/logoUaslp.png" alt="" />
+      <img class="img" src="/images/logo2.png" alt="" />
     </div>
+    <p>Ingresar al sitio</p>
+  </div>
 
-    <!-- Contenido Principal -->
-    <div class="content">
-        <p>Iniciar sesión (ingresar)</p>
-        <div class="input-container">
-            <i class="fa-solid fa-user"></i>
-            <input class="input" type="text" onfocus="this.value=''" value="Correo UASLP / RPE / Número de teléfono">
-        </div>
-        <div class="input-container">
-            <i class="fa-solid fa-lock"></i>
-            <input class="input" type="text" onfocus="this.value=''" value="Contraseña institucional">
-        </div>
-        <a [routerLink]="['/respasw']">¿Olvidaste tu contraseña?</a>
-        <button class="btn" (click)="navigateToMainDash()">Iniciar sesión (ingresar)</button>
-
+  <!-- Contenido Principal -->
+  <div class="content">
+    <p>Iniciar sesión (ingresar)</p>
+    <div class="input-container">
+      <i class="fa-solid fa-user"></i>
+      <input
+        class="input"
+        type="text"
+        onfocus="this.value=''"
+        value="Correo UASLP / RPE / Número de teléfono"
+      />
     </div>
+    <div class="input-container">
+      <i class="fa-solid fa-lock"></i>
+      <input
+        class="input"
+        type="text"
+        onfocus="this.value=''"
+        value="Contraseña institucional"
+      />
+    </div>
+    <a [routerLink]="['/respasw']">¿Olvidaste tu contraseña?</a>
+    <button class="btn" (click)="navigateToMainDash()">
+      Iniciar sesión (ingresar)
+    </button>
+  </div>
 
-    <!-- Footer -->
-    <app-footer></app-footer>
+  <!-- Footer -->
+  <app-footer></app-footer>
 </div>

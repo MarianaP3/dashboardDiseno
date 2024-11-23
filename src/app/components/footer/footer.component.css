@@ -1,42 +1,41 @@
 :root {
-    --Footer_color: #00B2E3; /* Color del borde superior */
-    --Primary_color: #004A98; /* Color de fondo */
-    --White_color: #FFFFFF; /* Blanco */
+  --Footer_color: #00b2e3; /* Color del borde superior */
+  --Primary_color: #004a98; /* Color de fondo */
+  --White_color: #ffffff; /* Blanco */
 }
 
 .container {
-    font-family: "Open Sans" !important; 
-    display: flex;
-    height: 175.5px;
-    padding: 0px 144px;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    border-top: 8px solid var(--Footer_color, #00B2E3);
-    background: var(--Primary_color, #004A98);
-    
-    position: static;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    text-align: left;
-    box-sizing: border-box;
+  font-family: "Open Sans" !important;
+  display: flex;
+  height: 175.5px;
+  padding: 0px 144px;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  border-top: 8px solid var(--Footer_color, #00b2e3);
+  background: var(--Primary_color, #004a98);
+
+  position: static;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: left;
+  box-sizing: border-box;
 }
 
-
-.img{
-    height: 101px;
+.img {
+  height: 101px;
 }
 
-.footer-content{
-    width: 270px;
+.footer-content {
+  width: 270px;
 }
 
-.footer-content p{
-    font-size: 13px;
+.footer-content p {
+  font-size: 13px;
 }
 
-.footer-content h4{
-    font-size: 18px;
-    border-bottom: 2px solid white;
+.footer-content h4 {
+  font-size: 18px;
+  border-bottom: 2px solid white;
 }

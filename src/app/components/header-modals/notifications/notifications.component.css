@@ -1,178 +1,175 @@
 /* Modal General */
 .modal {
-    display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
 }
 
 .modal-content {
-    text-align: center;
-    border-radius: 40px;
-    width: 40%;
-    height: 600px;
-    position: relative;
-    border-radius: 20px;
-    border: 3px solid #000;
-    background: linear-gradient(180deg, #004A98 0%, #002C5B 93%, #001832 100%);
-    padding: 20px;
-    margin: 0;
-    color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  border-radius: 40px;
+  width: 40%;
+  height: 600px;
+  position: relative;
+  border-radius: 20px;
+  border: 3px solid #000;
+  background: linear-gradient(180deg, #004a98 0%, #002c5b 93%, #001832 100%);
+  padding: 20px;
+  margin: 0;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-
 .notifications-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid white;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid white;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .notifications-header h2 {
-    margin: 0;
-    font-size: 18px;
-    font-weight: bold;
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .notifications-header .date-time {
-    font-size: 14px;
-    font-weight: bold;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 /* Cuerpo de Notificaciones */
 .notifications-body {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .unread-title {
-    font-size: 16px;
-    margin-bottom: 10px;
-    font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
 /* Notificación Individual */
 .notification {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-    border-bottom: 1px solid white;
-    gap: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid white;
+  gap: 15px;
 }
 
 .notification-left {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .notification-date {
-    font-size: 14px;
-    font-weight: bold;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .notification-message {
-    font-size: 14px;
-    line-height: 1.4;
+  font-size: 14px;
+  line-height: 1.4;
 }
 
 .notification-right {
-    text-align: right;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
 }
 
 .notification-time {
-    font-size: 14px;
-    font-weight: bold;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .fa-trash {
-    color: white;
-    cursor: pointer;
-    font-size: 18px;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
 }
 
 .fa-check-circle {
-    color: #00ff00; /* Color verde */
-    font-size: 18px;
+  color: #00ff00; /* Color verde */
+  font-size: 18px;
 }
 
 /* Footer de Notificaciones */
 .notifications-footer {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
 .pagination-link {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-    padding: 5px 10px;
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.1);
-    transition: background-color 0.3s ease;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 0.3s ease;
 }
 
 .pagination-link:hover {
-    background-color: rgba(255, 255, 255, 0.3);
-    text-decoration: underline;
+  background-color: rgba(255, 255, 255, 0.3);
+  text-decoration: underline;
 }
 
 /* Checkbox Personalizado */
 .custom-checkbox {
-    
-    position: relative;
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-  }
-  
-  .custom-checkbox input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-  
-  .custom-checkbox .checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 20px;
-    width: 20px;
-    background-color: white;
-    border: 2px solid #00B2E3; 
-    border-radius: 3px;
-    cursor: pointer;
-  }
-  
-  .custom-checkbox .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-    left: 5px;
-    top: 1px;
-    width: 6px;
-    height: 10px;
-    border: solid #00B2E3;
-    border-width: 0 2px 2px 0;
-    transform: rotate(45deg);
-  }
-  
-  /* Mostrar el check al seleccionar */
-  .custom-checkbox input:checked ~ .checkmark:after {
-    display: block;
-  }
-  
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+.custom-checkbox input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.custom-checkbox .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border: 2px solid #00b2e3;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.custom-checkbox .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 5px;
+  top: 1px;
+  width: 6px;
+  height: 10px;
+  border: solid #00b2e3;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* Mostrar el check al seleccionar */
+.custom-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
