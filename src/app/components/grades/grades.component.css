@@ -1,15 +1,30 @@
-.gradesHeader{
-    color: black;
-    background-color: #D9D9D9;
-    font-family: "Open Sans" !important; 
-
+.gradesHeader {
+  color: black;
+  background-color: #d9d9d9;
+  font-family: "Open Sans" !important;
+  height: 130px;
 }
-.gradesHeader-menu{
-    background-color: #D9D9D9;
-    height: 100px;
+.gradesHeader-menu {
+  background-color: #d9d9d9;
+  height: 40px;
 }
-.gradesHeader-menuItem{
-    display: inline-block;
-    padding-inline: 150px;
-    padding-top: 10px;
+.gradesHeader-menuItem {
+  display: inline-block;
+  padding-inline: 150px;
+  padding-top: 10px;
 }
+.gradesHeader-editor {
+    background-color: #d9d9d9;
+    height: 75px;
+    display: flex; 
+    align-items: center; 
+    margin-top: 10px;;
+  }
+  .gradesHeader-editorItem {
+    display: flex; 
+    align-items: center; 
+    padding-inline: 0px;
+    height: 42px;
+    font-family: "Open Sans";
+  }
+  

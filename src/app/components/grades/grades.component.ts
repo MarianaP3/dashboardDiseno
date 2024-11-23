@@ -7,8 +7,6 @@ import { MainHeaderComponent } from '../main-header/main-header.component';
   standalone: true,
   imports: [FooterComponent, MainHeaderComponent],
   templateUrl: './grades.component.html',
-  styleUrl: './grades.component.css'
+  styleUrl: './grades.component.css',
 })
-export class GradesComponent {
-
-}
+export class GradesComponent {}

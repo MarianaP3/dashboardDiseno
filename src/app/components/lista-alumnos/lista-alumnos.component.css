@@ -1,67 +1,65 @@
-.topBar{
-    display: flex;
-    justify-content: center;
-    gap: 450px;
-    margin: 10px 0;
+.topBar {
+  display: flex;
+  justify-content: center;
+  gap: 450px;
+  margin: 10px 0;
 }
 
-.topBar h1{
-    font-family: "Open Sans";
-    color: #0056b3;
-    font-weight: 700;
+.topBar h1 {
+  font-family: "Open Sans";
+  color: #0056b3;
+  font-weight: 700;
 }
 
-.topBar i{
-  color: #0D6EFD;
+.topBar i {
+  color: #0d6efd;
 }
 
-.topBar i:hover{
-  filter: saturate(.5)
+.topBar i:hover {
+  filter: saturate(0.5);
 }
 
 .custom-table {
-    width: calc(100% - 312px); 
-    margin: 0 auto; 
-    border-collapse: collapse; 
-    text-align: center; 
-    border: 1px solid #000;
-    margin-bottom: 74px;
-  }
-  
-  .custom-table th, .custom-table td {
-    padding: 10px; /* Espaciado dentro de cada celda */
-    border: 1px solid #000; /* Borde en cada celda */
-  }
-  
-  .custom-table img {
-    width: 50px; /* Ajusta el tamaño de las imágenes */
-  }
-  
-  .custom-table button {
-    padding: 5px 10px;
-    background-color:transparent;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
+  width: calc(100% - 312px);
+  margin: 0 auto;
+  border-collapse: collapse;
+  text-align: center;
+  border: 1px solid #000;
+  margin-bottom: 74px;
+}
 
-  .custom-table button i{
-    color: #000;
-  }
-  
-  .custom-table button i:hover {
-    color: red;
-  }
+.custom-table th,
+.custom-table td {
+  padding: 10px; /* Espaciado dentro de cada celda */
+  border: 1px solid #000; /* Borde en cada celda */
+}
 
-  .custom-table  td:hover {
-    background-color: #004A98; 
-  }
+.custom-table img {
+  width: 50px; /* Ajusta el tamaño de las imágenes */
+}
 
-  .custom-table  th {
-    background-color: #004A98;
-    color: white;
-    font-weight: bold;
-  }
+.custom-table button {
+  padding: 5px 10px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
 
+.custom-table button i {
+  color: #000;
+}
 
-  
+.custom-table button i:hover {
+  color: red;
+}
+
+.custom-table td:hover {
+  background-color: #004a98;
+}
+
+.custom-table th {
+  background-color: #004a98;
+  color: white;
+  font-weight: bold;
+}
