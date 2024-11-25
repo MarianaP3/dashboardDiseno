@@ -13,5 +13,5 @@ export const routes: Routes = [
     {path: "mainDash", component: MainDashBoardComponent},
     {path: "avisos", component: AvisosComponent},
     {path: "listaalumnos", component: ListaAlumnosComponent},
-    {path: "grades", component: GradesComponent}
+    {path: "grades", component: GradesComponent},
 ];

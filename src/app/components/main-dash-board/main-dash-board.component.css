@@ -1,0 +1,144 @@
+/* Contenedor principal */
+.course-container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  padding: 20px;
+  font-family: "Open Sans";
+}
+
+/* Título del curso */
+.course-container h1 {
+  font-size: 60px;
+  font-weight: 900;
+  color: #004a98;
+  margin-bottom: 20px;
+}
+
+/* Contenedor de las tarjetas de unidad */
+.units-container {
+  display: flex;
+  justify-content: center;
+  gap: 144px;
+  flex-wrap: wrap;
+}
+
+/* Tarjeta de cada unidad */
+.unit-card {
+  background-color: #004a98;
+  color: white;
+  border-radius: 20px;
+  border: 1px solid #000;
+  padding: 10px;
+  width: 504px;
+  height: 680px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.unit-card h2 {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: left;
+  margin-left: 15px;
+}
+
+/* Actividades */
+.activity {
+  background-color: #f2f8ff;
+  color: black;
+  border-radius: 10px 10px 0px 10px;
+  border: solid black 2px;
+  padding: 10px;
+  margin-bottom: 15px;
+  margin-top: 55px;
+  width: 95%;
+  height: 180px;
+}
+.act-head {
+  display: flex;
+  width: 100%;
+  height: 105px;
+  margin-top: 5px;
+}
+
+.activity-header {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 27px;
+  font-weight: 600;
+  text-align: left;
+  padding-left: 20px;
+  width: 30%;
+  height: 90px;
+}
+
+.activity-description {
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-align: justify;
+  font-size: 20px;
+  font-weight: 600;
+  width: 50%;
+  margin-left: 30px;
+  width: 252px;
+}
+
+/* Barra de progreso */
+.progress-bar-container {
+  border-radius: 10px;
+  height: 105;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 12px;
+}
+
+.progress-bar {
+    width: 183px;
+    height: 22px;
+    background-color: black;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center; 
+    padding-left: 4px;
+  }
+  
+
+.progress {
+  height: 16px;
+  background-color: #0d6efd;
+  border-radius: 5px;
+}
+
+.progress-percentage {
+  font-size: 23px;
+  font-weight: 400;
+  color: white;
+  margin-left: 122px;
+  background-color: black;
+  width: 60px;
+  border-radius: 0px 0px 20px 20px;
+}
+
+/* Botón */
+.see-more-btn {
+  display: block;
+  margin: 28px 321.9px 0;
+  padding: 8px 15px;
+  background-color: #0a58ca;
+  color: white;
+  border: none;
+  border-radius: 0px 0px 10px 10px;
+  cursor: pointer;
+  font-size: 20px;
+  text-align: center;
+  border: solid black 1px;
+  width: 168px;
+}
+
+.see-more-btn:hover {
+  background-color: #0A58CA;
+}
