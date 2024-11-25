@@ -1,0 +1,153 @@
+/* General */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 32px;
+  color: #003d99;
+  margin: 10px 0;
+  font-family: "Open Sans";
+  font-size: 45px;
+  font-weight: 800;
+}
+
+.header h2 {
+  font-size: 24px;
+  color: #00bfff;
+  margin: 10px 0 50px 23%;
+  text-align: justify;
+  font-family: "Open Sans";
+  font-size: 35px;
+  font-weight: 600;
+  width: 824px;
+}
+
+.back-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+/* Content */
+.content {
+  display: flex;
+  gap: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 20%;
+}
+
+.progress-chart {
+  text-align: center;
+  background-color: white;
+  border: 2px solid black;
+  padding: 20px;
+  width: 147px;
+  height: 170px;
+  margin-left: 50%;
+}
+
+.progress-chart p {
+  background-color: #004a98;
+  color: white;
+  margin-top: 18px;
+  height: 63px;
+  justify-content: left;
+  align-items: center;
+  font-family: "Open Sans";
+  font-size: 21px;
+  width: 148px;
+}
+
+/* Cards */
+.cards {
+  width: 1050px;
+  max-height: 400px;
+  overflow-y: scroll;
+  margin-left: 35px;
+  scrollbar-width: none;
+  margin-bottom: 40px;
+}
+
+.question-card {
+  background-color: #f2f8ff;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  padding: 0px 15px 15px 50px;
+  margin-bottom: 15px;
+  margin-left: 55px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  width: 840px;
+  height: auto;
+}
+
+.question-title {
+  height: auto;
+  width: 205px;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+.question-card h3 {
+  font-size: 28px;
+  color: #3c3c3b;
+  font-family: "Open Sans";
+  font-size: 28px;
+  margin-bottom: 35px;
+  margin-top: 0;
+  width: 200px;
+}
+
+.progress-percentage {
+  color: #004a98;
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
+  width: 200px;
+}
+
+.answer {
+  width: 460px;
+  font-family: "Open Sans";
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 48px;
+}
+
+.answer strong {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.answer p {
+  margin: 0;
+  font-size: 20px;
+  text-align: justify;
+}
