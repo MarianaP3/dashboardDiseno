@@ -2,7 +2,11 @@
 
 <div class="container">
   <div class="header">
-    <button class="back-button">⬅</button>
+    <a [routerLink]="['/mainDash']">
+      <button class="back-button">
+        <i class="fa-solid fa-arrow-left fa-2x"></i>
+      </button>
+    </a>
     <h1>AVANCES: ACT 1.1</h1>
     <h2>Identificando problemas de usabilidad y accesibilidad</h2>
   </div>
@@ -14,7 +18,20 @@
           class="fa-solid fa-chart-column fa-6x"
           style="width: 117px; height: 92px"
         ></i>
-        <p>Gráfica de Progreso</p>
+
+        <p (click)="openModalCreate()">Gráfica de Progreso</p>
+
+        <!-- Modal -->
+        <div *ngIf="isModalOpen" class="modal-overlay">
+          <div class="modal-content">
+            <button class="close-btn" (click)="closeModalCreate()">×</button>
+            <progreso-alumno
+              [isOpen]="isModalOpen"
+              (close)="closeModalCreate()"
+            >
+            </progreso-alumno>
+          </div>
+        </div>
       </div>
     </div>
 

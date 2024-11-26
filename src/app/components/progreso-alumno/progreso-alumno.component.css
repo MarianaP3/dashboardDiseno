@@ -1,0 +1,15 @@
+.grafica-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0B3B64;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  canvas {
+    display: block;
+    background-color: #0B3B64;
+  }
+  
