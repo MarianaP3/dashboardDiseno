@@ -119,3 +119,17 @@
   margin-left: 25px;
 }
 
+.back-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    position: absolute;
+    left: 50px;
+    top: 185px;
+    width: 60px;
+    height: 60px;
+  }

@@ -1,14 +1,18 @@
 <app-main-header></app-main-header>
+<a [routerLink]="['/mainDash']">
+  <button class="back-button">
+    <i class="fa-solid fa-arrow-left fa-2x"></i>
+  </button>
+</a>
 <!-- Encabezado principal -->
 
 <div class="enlaces-curso-container">
-    <div class="title-container">
-        <h2>Enlaces del curso</h2>
-        <div class="icon-container">
-            <i class="fa-solid fa-book-open fa-6x" style="color: black;"></i>
-        </div>
+  <div class="title-container">
+    <h2>Enlaces del curso</h2>
+    <div class="icon-container">
+      <i class="fa-solid fa-book-open fa-6x" style="color: black"></i>
     </div>
-  
+  </div>
 
   <!-- Contenedor con scroll vertical para los enlaces -->
   <div class="lista-enlaces">
@@ -21,11 +25,17 @@
         </button>
       </div>
       <div class="enlace-body">
-        <p style="text-align: left;padding: 15px;">{{ enlace.descripcion }}</p>
+        <p style="text-align: left; padding: 15px">{{ enlace.descripcion }}</p>
       </div>
     </div>
   </div>
 </div>
+
+<app-video-modal
+  *ngIf="isModalOpen"
+  [id]="selectedId"
+  (close)="closeModal()"
+></app-video-modal>
 
 <app-footer></app-footer>
 <!-- Pie de página -->

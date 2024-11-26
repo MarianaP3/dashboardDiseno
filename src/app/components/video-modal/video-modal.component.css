@@ -1,0 +1,61 @@
+/* Fondo de la superposición del modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Contenedor del modal */
+.modal-content {
+  background: #002366; /* Azul oscuro */
+  border-radius: 10px;
+  padding: 20px;
+  width: 400px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: white;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+/* Estilo del ícono */
+.icon-container {
+  margin-bottom: 20px;
+}
+
+.pdf-icon {
+  width: 50px;
+  height: auto;
+}
+
+/* Detalles del modal */
+.details h2,
+.details h3 {
+  margin: 10px 0 5px;
+  font-size: 20px;
+  text-align: left;
+  font-family: "Open sans";
+}
+
+.details p {
+  margin: 0 0 15px;
+  font-size: 16px;
+}
+
+.details .title,
+.details .author,
+.details .description {
+  font-weight: 300;
+  text-align: left;
+  font-size: 20px;
+  font-family: "Open sans";
+  border-bottom: white solid 2px;
+  padding-bottom: 15px;
+}

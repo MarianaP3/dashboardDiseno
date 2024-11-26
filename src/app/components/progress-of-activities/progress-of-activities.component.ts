@@ -17,7 +17,7 @@ import { ProgresoAlumnoComponent } from '../progreso-alumno/progreso-alumno.comp
     RouterModule,
     CommonModule,
     MainDashBoardWebComponent,
-    ProgresoAlumnoComponent // Importamos el componente
+    ProgresoAlumnoComponent 
   ],
   templateUrl: './progress-of-activities.component.html',
   styleUrls: ['./progress-of-activities.component.css'], // Corrige aquí la propiedad para "styleUrls"
