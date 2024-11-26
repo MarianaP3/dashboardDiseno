@@ -1,0 +1,121 @@
+/* Contenedor principal */
+.enlaces-curso-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  color: #003366;
+}
+
+.title-container {
+  width: 800px;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-self: center;
+}
+
+.icon-container {
+  width: 150px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+/* Título */
+.enlaces-curso-container h2 {
+  color: var(--Primary_color, #004a98);
+  font-family: "Open Sans";
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 400px;
+  margin-top: 45px;
+}
+
+/* Contenedor con scroll para la lista de enlaces */
+.lista-enlaces {
+  max-height: 400px; /* Altura máxima del contenedor */
+  overflow-y: auto; /* Habilita el scroll vertical */
+  margin-bottom: 20px;
+  padding-right: 10px; /* Espacio para el scroll */
+  border: 1px solid #ddd; /* Borde para el contenedor */
+  border-radius: 20px;
+  background-color: #f9f9f9;
+  background-color: #004a98;
+  scrollbar-width: none;
+  width: 908;
+}
+
+/* Tarjetas */
+.enlace-card {
+  background-color: #004a98;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+/* Encabezado de cada tarjeta */
+.enlace-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.enlace-header h3 {
+  color: var(--color_prueba, #fff);
+  font-family: "Open Sans";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-left: 50px;
+}
+
+/* Botón circular */
+.add-button {
+  background-color: #d8d8d8;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.add-button span {
+  font-size: 80px;
+  color: #00509e;
+  font-weight: bold;
+}
+
+.add-button:hover {
+  background-color: #dddddd;
+}
+
+/* Cuerpo de la tarjeta */
+.enlace-body {
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 40px;
+    width: 800px;
+    margin-left: 85px;
+  }
+.enlace-body p {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 20px;
+  border-bottom: 5px solid #ffffff;
+  padding-bottom: 10px;
+  border: black solid 2px;
+  width: 742px;
+  height: 55px;
+  margin-left: 25px;
+}
+
