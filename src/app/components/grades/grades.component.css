@@ -113,3 +113,37 @@
   margin: 0;
   font-family: Arial, sans-serif;
 }
+
+@media (max-width: 680px) {
+
+
+  .gradesHeader-menuItem{
+    visibility: hidden;
+  }
+
+  .gradesHeader-editor{
+    display: flex;
+    padding: 0;
+    gap: 10px;
+  }
+
+  .gradesHeader-editorItem{
+    height: 60px; 
+    width: 100px !important; 
+    margin: 0 !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 !important;
+  }
+
+  .gradesFooter{
+    display: inline;
+    flex-direction: row;
+  }
+
+  .flecha{
+    font-size: 30px;
+  }
+
+
+}

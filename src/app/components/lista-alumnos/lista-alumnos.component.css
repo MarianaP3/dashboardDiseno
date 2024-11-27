@@ -96,3 +96,11 @@
   font-size: 20px;
   cursor: pointer;
 }
+
+@media (max-width: 680px) {
+  .topBar{
+    gap: 30px;
+  }
+
+
+}

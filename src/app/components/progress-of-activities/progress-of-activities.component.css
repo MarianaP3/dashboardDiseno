@@ -225,3 +225,105 @@ body {
   font-size: 20px;
   cursor: pointer;
 }
+
+
+@media (max-width: 680px) {
+  /* Header */
+  .header h1 {
+    font-size: 24px; /* Reduce tamaño del título principal */
+  }
+
+  .header h2 {
+    font-size: 18px; /* Reduce tamaño del subtítulo */
+    margin-left: 0; /* Alinea al centro */
+    width: auto; /* Permite que se ajuste automáticamente */
+    text-align: center;
+  }
+
+  /* Back button */
+  .back-button {
+    left: 10px; /* Ajusta la posición del botón */
+    top: 100px;
+    width: 50px;
+    height: 50px;
+  }
+
+  /* Sidebar */
+  .sidebar {
+    width: 100%; /* Ocupa todo el ancho */
+    margin: 0 auto; /* Centrado */
+    text-align: center;
+  }
+
+  .progress-chart {
+    margin: 0 auto; /* Centrado */
+    width: 120px; /* Reduce tamaño */
+    height: auto;
+  }
+
+  .progress-chart p {
+    font-size: 16px; /* Ajusta tamaño de fuente */
+    height: auto; /* Permite altura flexible */
+  }
+
+  /* Cards */
+  .cards {
+    width: 100%; /* Ocupa todo el ancho */
+    margin-left: 0; /* Sin margen lateral */
+    max-height: auto; /* Permite altura flexible */
+    padding: 0 10px; /* Espaciado interno */
+  }
+
+  .question-card {
+    width: 90%; /* Ocupa todo el ancho */
+    padding: 10px; /* Reduce espaciado interno */
+    margin-left: 0; /* Elimina margen */
+  }
+
+  .question-title {
+    width: 100%; /* Alineación completa */
+    margin: 0 auto 10px; /* Centrado con margen inferior */
+  }
+
+  .question-card h3 {
+    font-size: 18px; /* Reduce tamaño */
+  }
+
+  .progress-percentage {
+    font-size: 16px; /* Ajusta tamaño */
+  }
+
+  .answer {
+    width: auto; /* Ajusta el ancho automáticamente */
+    margin-left: 0; /* Centra el contenido */
+  }
+
+  .answer strong {
+    font-size: 20px; /* Reduce tamaño */
+  }
+
+  .answer p {
+    font-size: 16px; /* Reduce tamaño */
+  }
+
+  /* Modal */
+  .modal-content {
+    width: 95%; /* Asegura que el modal sea responsivo */
+    max-width: none; /* Elimina el ancho máximo */
+  }
+
+  /* General Adjustments */
+  .content {
+    flex-direction: column; /* Cambia de fila a columna */
+    gap: 10px; /* Espaciado entre elementos */
+  }
+
+  .progress-chart p{
+    width: 100%;
+  }
+
+  .progress-percentage{
+    font-size: 50px;
+    margin: 0 auto;
+  }
+}
