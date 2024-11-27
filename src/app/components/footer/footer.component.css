@@ -39,3 +39,24 @@
   font-size: 18px;
   border-bottom: 2px solid white;
 }
+
+@media (max-width: 680px) {
+  .container{
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .footer-content p{
+    font-size: 10px;
+  }
+
+  .footer-content h4{
+    font-size: 14px;
+  }
+
+  .img{
+    padding-left: 60px;
+  }
+}

@@ -87,3 +87,50 @@
 .btn-top:hover {
   color: #00014a;
 }
+
+@media (max-width: 680px) {
+  .all{
+    display: flexbox;
+    gap: 0;
+  }
+
+  .images {
+    height: 50px; /* Reduce aún más el tamaño de las imágenes */
+    position: absolute;
+    right: 70%;
+    margin-bottom: 20px;
+  }
+
+  .img{
+    height: 50px;
+  }
+
+  .newMat{
+    visibility: hidden;
+  }
+
+  .newMat::after  {
+    content: '+';
+    visibility: visible;
+    font-size: 60px; /* Ajusta el texto del botón */
+
+    content: '+'; /* Texto para pantallas pequeñas */
+    visibility: visible;
+    position: absolute;
+    left: 50%; /* Centra el texto horizontalmente */
+    top: 50%; /* Centra el texto verticalmente */
+    transform: translate(-50%, -50%);
+    padding-bottom: 70px;
+    visibility: visible;
+  }
+
+  .menus{
+    gap: 0;
+    position: absolute;
+    left: 70%;
+  }
+
+  .nav{
+    gap: 0;
+  }
+}
