@@ -17,7 +17,7 @@
   background: #002366; /* Azul oscuro */
   border-radius: 10px;
   padding: 20px;
-  width: 400px;
+  width: 637px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   text-align: center;
   color: white;
@@ -58,4 +58,10 @@
   font-family: "Open sans";
   border-bottom: white solid 2px;
   padding-bottom: 15px;
+}
+
+@media (max-width: 680px) {
+  .modal-content {
+    width: 350px;
+  }
 }

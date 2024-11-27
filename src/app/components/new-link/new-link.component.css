@@ -13,12 +13,7 @@
 }
 
 .modal {
-  background: linear-gradient(
-    to bottom,
-    #003366,
-    #003366 90%,
-     black
-  );
+  background: linear-gradient(to bottom, #003366, #003366 90%, black);
   color: #fff;
   padding: 20px;
   border-radius: 8px;
@@ -120,7 +115,7 @@
   align-items: center;
   cursor: pointer;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  margin-left: 90%;
+  margin-left: 88%;
 }
 
 .add-button span {
@@ -131,4 +126,16 @@
 
 .add-button:hover {
   background-color: #dddddd;
+}
+
+@media (max-width: 680px) {
+  .modal {
+    width: 85%;
+  }
+  .h2-subtitle {
+    width: 350px;
+  }
+  .h2 {
+    margin-left: 35px;
+  }
 }
