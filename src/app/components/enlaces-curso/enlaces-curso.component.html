@@ -1,11 +1,12 @@
 <app-main-header></app-main-header>
+
 <a [routerLink]="['/mainDash']">
   <button class="back-button">
     <i class="fa-solid fa-arrow-left fa-2x"></i>
   </button>
 </a>
-<!-- Encabezado principal -->
 
+<!-- Encabezado principal -->
 <div class="enlaces-curso-container">
   <div class="title-container">
     <h2>Enlaces del curso</h2>
@@ -16,26 +17,30 @@
 
   <!-- Contenedor con scroll vertical para los enlaces -->
   <div class="lista-enlaces">
+    <button class="add-button" (click)="openModal()">
+      <span>+</span>
+    </button>
     <!-- Lista de enlaces -->
     <div class="enlace-card" *ngFor="let enlace of enlaces">
       <div class="enlace-header">
         <h3>{{ enlace.titulo }}</h3>
-        <button class="add-button" (click)="onAgregarEnlace(enlace.id)">
-          <span>+</span>
-        </button>
       </div>
-      <div class="enlace-body">
+      <div class="enlace-body" (click)="openVideoModal()">
         <p style="text-align: left; padding: 15px">{{ enlace.descripcion }}</p>
       </div>
     </div>
   </div>
 </div>
 
+<!-- Modal de app-new-link -->
+<app-new-link [isOpen]="isModalOpen" (close)="closeModal()"></app-new-link>
+
+<!-- Modal de video -->
 <app-video-modal
-  *ngIf="isModalOpen"
+  *ngIf="isVideoModalOpen"
   [id]="selectedId"
-  (close)="closeModal()"
-></app-video-modal>
+  (close)="closeVideoModal()"
+>
+</app-video-modal>
 
 <app-footer></app-footer>
-<!-- Pie de página -->
