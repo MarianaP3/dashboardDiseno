@@ -9,6 +9,7 @@ import { MainDashBoardWebComponent } from './components/main-dash-board-web/main
 import { MainDashBoardMobileComponent } from './components/main-dash-board-mobile/main-dash-board-mobile.component';
 import { ProgressOfActivitiesComponent } from './components/progress-of-activities/progress-of-activities.component';
 import { ProgresoAlumnoComponent } from './components/progreso-alumno/progreso-alumno.component';
+import { EnlacesCursoComponent } from './components/enlaces-curso/enlaces-curso.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -21,5 +22,6 @@ export const routes: Routes = [
   { path: 'mainDash-web', component: MainDashBoardWebComponent },
   { path: 'mainDash-movil', component: MainDashBoardMobileComponent},
   { path: 'progressOfActivities', component: ProgressOfActivitiesComponent},
-  { path: 'studentProgress', component: ProgresoAlumnoComponent}
+  { path: 'studentProgress', component: ProgresoAlumnoComponent},
+  { path: 'courseLinks', component: EnlacesCursoComponent}
 ];
