@@ -4,6 +4,7 @@ import { FooterComponent } from '../footer/footer.component';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { VideoModalComponent } from '../video-modal/video-modal.component'; // Importar el modal
+import { NewLinkComponent } from '../new-link/new-link.component';
 
 @Component({
   selector: 'app-enlaces-curso',
@@ -13,10 +14,11 @@ import { VideoModalComponent } from '../video-modal/video-modal.component'; // I
     FooterComponent,
     CommonModule,
     RouterModule,
-    VideoModalComponent, // Agregar el modal como dependencia
+    NewLinkComponent, // Importar el componente NewLink como modal
+    VideoModalComponent,
   ],
   templateUrl: './enlaces-curso.component.html',
-  styleUrls: ['./enlaces-curso.component.css'], // Corrige "styleUrl" a "styleUrls"
+  styleUrls: ['./enlaces-curso.component.css'],
 })
 export class EnlacesCursoComponent {
   enlaces = [
@@ -42,19 +44,27 @@ export class EnlacesCursoComponent {
     },
   ];
 
-  isModalOpen = false; // Control del estado del modal
-  selectedId: number | null = null; // ID del enlace seleccionado
+  // Estados para los modales
+  isVideoModalOpen = false;
+  selectedId: number | null = null;
 
-  // Manejo de acción para agregar/enviar un enlace
-  onAgregarEnlace(id: number): void {
-    console.log(`Acción realizada para el enlace con ID: ${id}`);
-    this.selectedId = id; // Guardar el ID seleccionado
-    this.isModalOpen = true; // Abrir el modal
+  isModalOpen = false;
+
+  openModal() {
+    this.isModalOpen = true;
   }
 
-  // Cierra el modal
-  closeModal(): void {
+  closeModal() {
     this.isModalOpen = false;
-    this.selectedId = null; // Limpiar el ID seleccionado
+  }
+
+  // Abrir el modal de video
+  openVideoModal() {
+    this.isVideoModalOpen = true;
+  }
+
+  // Cerrar el modal de video
+  closeVideoModal() {
+    this.isVideoModalOpen = false;
   }
 }
