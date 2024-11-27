@@ -20,11 +20,11 @@
     <div class="enlace-card" *ngFor="let enlace of enlaces">
       <div class="enlace-header">
         <h3>{{ enlace.titulo }}</h3>
-        <button class="add-button" (click)="onAgregarEnlace(enlace.id)">
+        <button class="add-button">
           <span>+</span>
         </button>
       </div>
-      <div class="enlace-body">
+      <div class="enlace-body" (click)="onAgregarEnlace(enlace.id)">
         <p style="text-align: left; padding: 15px">{{ enlace.descripcion }}</p>
       </div>
     </div>
