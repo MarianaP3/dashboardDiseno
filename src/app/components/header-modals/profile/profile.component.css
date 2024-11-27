@@ -83,3 +83,15 @@
   border-bottom: 2px solid white;
   font-weight: 50;
 }
+
+@media (max-width: 680px) {
+  .modal-content{
+    width: 90%;
+    height: max-content;
+
+  }
+
+  .labels label{
+    width: 100%;
+  }
+}

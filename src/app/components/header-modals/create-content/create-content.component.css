@@ -106,3 +106,17 @@
 .b2:hover {
   background-color: #00b2e3;
 }
+
+@media (max-width: 680px) {
+  .modal-content{
+    width: 90%;
+  }
+
+  .input-group{
+    width: 90%;
+    height: max-content;
+  }
+  .bottom-btn{
+    gap: 10px;
+  }
+}

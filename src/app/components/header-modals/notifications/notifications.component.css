@@ -173,3 +173,23 @@
 .custom-checkbox input:checked ~ .checkmark:after {
   display: block;
 }
+
+@media (max-width: 680px) {
+  .modal-content{
+    width: 90%;
+    height: max-content;
+  }
+
+  .input-group{
+    width: 90%;
+    height: max-content;
+  }
+  .bottom-btn{
+    gap: 10px;
+  }
+
+  .notification-date{
+    visibility: hidden;
+    font-size: 1px;
+  }
+}

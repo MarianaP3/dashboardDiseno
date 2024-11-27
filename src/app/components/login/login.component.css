@@ -81,3 +81,31 @@
   font-weight: 600;
   cursor: pointer;
 }
+
+@media (max-width: 680px) {
+  .header {
+    font-size: 22px; /* Reduce aún más el tamaño del texto */
+  }
+
+  .header p{
+    font-size: 20px;
+  }
+
+  .img {
+    height: 50px; /* Reduce aún más el tamaño de las imágenes */
+  }
+
+  .content {
+    padding: 10px; /* Reduce aún más el espacio */
+    width: 90%;
+    margin: 10px;
+  }
+
+  .input-container .input {
+    font-size: 0.8rem; /* Ajusta el tamaño del texto */
+  }
+
+  .btn {
+    font-size: 12px; /* Ajusta el texto del botón */
+  }
+}
